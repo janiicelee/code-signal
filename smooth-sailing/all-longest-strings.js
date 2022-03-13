@@ -14,7 +14,7 @@ return the storage
 
 
 function solution(inputArray) {
-  debugger;
+
   var longestStrings = [];
   var longest = 0;
 
