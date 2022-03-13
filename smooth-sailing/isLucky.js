@@ -22,7 +22,7 @@ if its equal return true
 */
 
 function solution(n) {
-  debugger;
+
   var na = [];
   na = Array.from(String(n), Number);
 
