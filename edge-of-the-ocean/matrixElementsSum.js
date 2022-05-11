@@ -1,7 +1,7 @@
 function solution(matrix) {
-    var total = 0;
-    for(var i=0; i<matrix.length; i++) {
-        for(var j=0; j<matrix[i].length; j++) {
+    let total = 0;
+    for(let i=0; i<matrix.length; i++) {
+        for(let j=0; j<matrix[i].length; j++) {
             // check if number of rows is less than the length of matrix
             if(matrix[i][j] === 0 && i+1 <matrix.length) {
                 matrix[i+1][j] =0;
@@ -10,8 +10,6 @@ function solution(matrix) {
             total += matrix[i][j];
         }
     }
-    console.log(matrix);
-    console.log(total);
     return total;
 }
 

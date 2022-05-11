@@ -15,8 +15,8 @@ solution(n) = 13.
 */
 
 function solution(n) {
-  var value = 0;
-  for(var i=0; i<n-1; i++) {
+  let value = 0;
+  for(let i=0; i<n-1; i++) {
     value += 2;
   }
 

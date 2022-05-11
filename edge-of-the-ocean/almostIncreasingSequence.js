@@ -27,39 +27,10 @@ false
 
 */
 
-// function solution(array) {
-
-//   var counter = 0;
-
-//   for(var i=0; i<array.length-1; i++) {
-//     if(array[i] >= array[i+1]) {
-//       counter += 1;
-//     }
-//   }
-
-//   var max = Math.max(...array);
-//   console.log(max);
-
-//   var index = array.indexOf(max);
-//   console.log(index);
-//   var arr=[];
-
-//   for(var i=index+1; i<array.length; i++) {
-//     if (array[i] < max) {
-//       arr.push(array[i]);
-//     }
-//   }
-
-//   if (counter >1 || arr.length > 1) {
-//     return false;
-//   }
-//   return true;
-// }
-
 
 function solution(sequence) {
-  var bad = 0;
-  for(var i=1; i<sequence.length; i++) {
+  let bad = 0;
+  for(let i=1; i<sequence.length; i++) {
     if (sequence[i] <= sequence[i-1]) {
       bad++;
     }
@@ -70,6 +41,7 @@ function solution(sequence) {
 
     // if the element on current index is  less than or equal the adjacent element -2 steps back
     // && next element is less than or equal to the element on previous index return false
+    // ex. [1, 3, 1]
     if (sequence[i] <= sequence[i-2] && sequence[i+1] <= sequence[i-1]) {
       return false;
     }

@@ -9,10 +9,10 @@ solution(inputArray) = 21.
 */
 
 function solution(inputArray) {
-  var arr = [];
-  for (var i=0; i<inputArray.length-1; i++) {
+  let arr = [];
+  for (let i=0; i<inputArray.length-1; i++) {
       arr.push(inputArray[i] * inputArray[i+1]);
   }
-  var largest = Math.max(...arr);
+  const largest = Math.max(...arr);
   return largest;
 };

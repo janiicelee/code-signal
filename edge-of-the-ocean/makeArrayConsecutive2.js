@@ -20,11 +20,11 @@ Ratiorg needs statues of sizes 4, 5 and 7.
 */
 
 function solution(statues) {
-  var min = Math.min(...statues);
-  var max = Math.max(...statues);
-  var arr = [];
+  const min = Math.min(...statues);
+  const max = Math.max(...statues);
+  let arr = [];
 
-  for (var i=min; i<max; i++) {
+  for (let i=min; i<max; i++) {
     if (!statues.includes(i)) {
       arr.push(i);
     }
